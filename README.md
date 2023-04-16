@@ -1,9 +1,10 @@
 # HouseRulesGuide
 The HouseRules for Demeo Users and Setup Guide
-041323 Created by Degederon for Demeo gamers.
+041523 Created by Degederon for Demeo gamers.
 
-The current version of the guide is 1.3. The next guide version will be prior to May 1. 
+The current version of the guide is 1.4. A lot of work going into breaking out
+sections and examples for further understanding. If you have suggestions, screen captures, troubleshooting, real life issue and solutions or other topic inclusions, send them to demeo@epomd.com.
 
-If you have suggestions for topic inclusions, send them to demeo@epomd.com.
+Happy Gaming,
 
 Dege
