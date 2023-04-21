@@ -1,6 +1,6 @@
 # HouseRulesGuide
-Dege's Demeo Setup & Users Guide featuring The "House Rules" Customization Mod.
 041623 Created by Degederon for Demeo gamers.
+Dege's Demeo Setup & Users Guide featuring The "House Rules" Customization Mod.
 
 The current version of the guide is 1.6. A lot of work going into breaking out
 sections and examples for further understanding. 
