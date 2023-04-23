@@ -3,7 +3,8 @@
 Dege's Demeo Setup & Users Guide featuring The "House Rules" Customization Mod.
 
 The current version of the guide is 1.6. A lot of work going into breaking out
-sections and examples for further understanding. 
+sections and examples for further understanding. Until I can get a more dynamic
+way to view, please download the pdf and view.
 
 This version contains a lot of information. Here are some areas of interest.
 
