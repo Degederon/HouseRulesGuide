@@ -1,13 +1,14 @@
 # HouseRulesGuide
-041623 Created by Degederon for Demeo gamers.
+052223 Created by Degederon for Demeo gamers.
 Dege's Demeo Setup & Users Guide featuring The "House Rules" Customization Mod.
 
-The current version of the guide is 1.6. A lot of work going into breaking out
+The current version of the guide is 2.0. A lot of work going into breaking out
 sections and examples for further understanding. Until I can get a more dynamic
 way to view, please download the pdf and view.
 
 This version contains a lot of information. Here are some areas of interest.
 
+- Incorporate the latest houserules, roomfinder and roomcode versions.
 - Pictorial update for installing House Rules modification to be used with Demeo
 - Pictorial update for installing Room Finder modification to be used with Demeo.
 - Pictorial update for installing Room Code modification to be used with Demeo.
