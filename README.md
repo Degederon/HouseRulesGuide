@@ -30,15 +30,15 @@ NEW
 
 - Refreshed Black Sarcophagus maps with additional floor views. 
 
-Recent Additons
+Recent Additions
 
-- New Steam achievment section has been added
+- New Steam achievement section has been added
 
 - New section for Demeo chapters now include Black Sarcophagus (BS), Rat King and Roots of Evil. Check out Dege's
   narrated walk though for some of the BS floors. Be a guest on our next taping. Send your request to 
   demeo@epomd.com.
 
-- Youtube video links have been added to Black Sarcophagus to show you around each level.
+- YouTube video links have been added to Black Sarcophagus to show you around each level.
 
 - Shop levels have randomized audio tracks and a short track and link have been put together for you to download
   from Github.
@@ -49,12 +49,3 @@ Recent Additons
 - Added Character Section has been added
 
 - Added more detail for certain mod features with illustrations and explanation.
-
-- Minor formatting issues and added troubleshooting items
-
-If you have suggestions, screen captures, troubleshooting, real life issue and solutions or other topic inclusions, 
-send them to Demeo@epomd.com.
-
-Happy Gaming,
-
-Dege
