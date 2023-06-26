@@ -1,34 +1,27 @@
 # HouseRulesGuide
-062223 Created by Degederon for Demeo gamers.
+062523 Created by Degederon for Demeo gamers.
 
-Version 2.6
+Version 2.7
 
 Dege's Demeo Setup & Users Guide featuring The "House Rules" Customization Mod.
 
-The current version of the guide is 2.6. A few folks recently referred to this guide as a bible or a wiki. 
+The current version of the guide is 2.7. A few folks recently referred to this guide as a bible or a wiki. 
 I am flattered. Starting to get user feedback now ands that is fantastic. Its telling me that the content
 is getting read and hopefully absorbed in some capacity. This started out as a mod guide and has certainly
 transformed. 
 
-This version has expanded beyond 115 pages now, wow! 
+- Announcement - Would like to play some beta maps and need 3 additional players. If you are interested send me an email to demeo@epomd.com. If you like to raise hell and have fun in the process, let me know. What nights are good for you and what timezone.
+
+This version has expanded beyond 125 pages now, wow! 
 
 Here are some new areas of interest.
 
 NEW
-- Reader Feedback from "Frak". See troubleshooting section and watch new YouTube video on how to troubleshoot
-  your custom .json files with this cool utility!
+- Updated Steam Achievement section with more details. 
 
-- Dege's YouTube Channel has over a half a dozen narrated walk-throughs. It will help you decide floors to use
-  when customizing your game. 
+- Improved on Cool Links section. 
 
-- I have decided to offer you a chance to be in future video tapings as I perform
-  a walkthrough. Want to be a volunteer guest in a future taping? Send your request to Demeo@epomd.com. We will
-  meet in a private multi-player room and it will take no more than 15-20 minutes.
-
-- Added Baddies section with some closeups of some classic characters. What is your favorite that you would like
-  to see?
-
-- Refreshed Black Sarcophagus maps with additional floor views. 
+- Added more recent Q & A items.
 
 Recent Additions
 
@@ -49,3 +42,18 @@ Recent Additions
 - Added Character Section has been added
 
 - Added more detail for certain mod features with illustrations and explanation.
+
+- Reader Feedback from "Frak". See troubleshooting section and watch new YouTube video on how to troubleshoot
+  your custom .json files with this cool utility!
+
+- Dege's YouTube Channel has over a half a dozen narrated walk-throughs. It will help you decide floors to use
+  when customizing your game. 
+
+- I have decided to offer you a chance to be in future video tapings as I perform
+  a walkthrough. Want to be a volunteer guest in a future taping? Send your request to Demeo@epomd.com. We will
+  meet in a private multi-player room and it will take no more than 15-20 minutes.
+
+- Added Baddies section with some closeups of some classic characters. What is your favorite that you would like
+  to see?
+
+- Refreshed Black Sarcophagus maps with additional floor views. 
