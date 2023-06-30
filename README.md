@@ -1,7 +1,7 @@
 # HouseRulesGuide
-062723 Created by Degederon for Demeo gamers.
+063023 Created by Degederon for Demeo gamers.
 
-Version 2.8 PM Edition
+Version 2.8 AM Edition
 
 Dege's Demeo Setup & Users Guide featuring The "House Rules" Customization Mod.
 
