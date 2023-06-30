@@ -1,25 +1,26 @@
 # HouseRulesGuide
-041623 Created by Degederon for Demeo gamers.
+063023 Created by Degederon for Demeo gamers.
 Dege's Demeo Setup & Users Guide featuring The "House Rules" Customization Mod.
 
-The current version of the guide is 1.6. A lot of work going into breaking out
-sections and examples for further understanding. 
+Version 2.8 PM Edition
 
-This version contains a lot of information. Here are some areas of interest.
+Dege's Demeo Setup & Users Guide featuring The "House Rules" Customization Mod.
 
-- Pictorial update for installing House Rules modification to be used with Demeo
-- Pictorial update for installing Room Finder modification to be used with Demeo.
-- Pictorial update for installing Room Code modification to be used with Demeo.
-- Pictorial overview of sample rule sets provided by House Rules.
-- Section 8 - Begins to provide a pictorial view of ability declarations and how they work in the game after you declare them.
-- Section 9 - A comprehensive breakdown of the ability keys in a table.
-- Section 10 - Behaviors
-- Section 11 - Board Pieces
-- Section 12 - Effecxt State types
-- Section 13 - Piece Types
-- Section 14 - Pictorial view of cards and their descriptions
-- Section 15 - User \ Feedback Tips and Tricks
-- Section 16 - A breakdown of the abilities table, given card names and their descriptions (Over and above what is shown in Section 14)
+The current version of the guide is 2.8. A few folks recently referred to this guide as a bible or a wiki. I am flattered. Starting to get user feedback now ands that is fantastic. Its telling me that the content is getting read and hopefully absorbed in some capacity. This started out as a mod guide and has certainly transformed.
+
+Announcement - Would like to play some beta maps and need 3 additional players. If you are interested send me an email to demeo@epomd.com. If you like to raise hell and have fun in the process, let me know. What nights are good for you and what timezone.
+This version has expanded beyond 125 pages now, wow!
+
+Here are some new areas of interest.
+
+NEW
+
+Updated Steam Achievement section with more details.
+
+Improved on Cool Links section.
+
+Expanded Rules and Configurations Section 
+
 
 If you have suggestions, screen captures, troubleshooting, real life issue and solutions or other topic inclusions, send them to demeo@epomd.com.
 
