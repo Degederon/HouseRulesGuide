@@ -1,53 +1,45 @@
 # HouseRulesGuide
-063023 Created by Degederon for Demeo gamers.
 
-Version 2.8 AM Edition
+081625 Created by Degederon for Demeo gamers.
 
-Dege's Demeo Setup & Users Guide featuring The "House Rules" Customization Mod.
+Version 3.0 PM Edition
 
-Thank you for your emails! This guide is slowly being referenced as a bible or wiki for Demeo. I am flattered. 
-The feedback is letting me know that it is helping you to install the game or even take a stab at making
-your own json file. This started out as a mod guide for "House Rules" and I figured why stop there.
-transformed. 
+Send feedback to: Demeo@epomd.com
 
-- Announcement - Would you like to play some beta maps with Dege? I need upto 3 additional players. If you are interested 
-send an email to demeo@epomd.com. If you like to have fun and laugh, let me know. What nights are good for you and what timezone.
-I will setup a room number where we can play.
 
-This version has expanded beyond 125 pages now, wow! 
+
+Dege's Demeo Setup \& Users Guide featuring The "House Rules" Customization Mod.
+
+
+
+This guide has been available since 2023 and it is now time for an update in 2025. Utilizing AI and have a lot of ideas to share, so stay tuned and keep a current copy of the guide for reference.
+
+
+
+This version has expanded beyond 130 pages and growing.
+
+
 
 Here are some new areas of interest.
 
-NEW
-- Incorporated in this guide are notes in various areas with a date of entry. That will keep the guide fresh and updated. 
 
-- Expanded Rules and Configuration section for modders.
 
-- Improved on Cool Links section. 
+* New Card section - Tested as many cards as possible and revealed my results.
+* I implemented a Ready to Go(RTG) installation process that will virtually eliminate all of the downloads required. Take a look!
+* The rules and configuration section is getting overhauled and expanded. The authors documentation is very good and the examples you will see will expand how the rule is to be used and behaves in real life!
+* YouTube play throughs are being planned. If you would like me to join you, send an invite to Demeo@epomd.com and we will record for entertainment value and get it on YouTube!
+* All maps are in this version with beautiful screen captures.
 
-- Added more recent Q & A items.
 
-Recent Additions
+Coming soon are expanded troubleshooting and brand new scenarios I will be releasing on GitHub!
 
-- New Steam achievement section has been added
 
-- New section for Demeo chapters now include Black Sarcophagus (BS), Rat King and Roots of Evil. Check out Dege's
-  narrated walk though for some of the BS floors. Be a guest on our next taping. Send your request to 
-  demeo@epomd.com.
 
-- YouTube video links have been added to Black Sarcophagus to show you around each level.
+Thanks,
 
-- Shop levels have randomized audio tracks and a short track and link have been put together for you to download
-  from Github.
 
-- New Cool Links section - This has lots of links to check out from Demeo artists and their artwork. So much to
-  download so check it out. 
 
-- Added Character Section has been added
+Dege
 
-- Added more detail for certain mod features with illustrations and explanation.
-
-- I have decided to offer you a chance to be in future video tapings as I perform
-  a walkthrough. Want to be a volunteer guest in a future taping? Send your request to Demeo@epomd.com. We will
-  meet in a private multi-player room and it will take no more than 15-20 minutes.
+&nbsp; 
 
