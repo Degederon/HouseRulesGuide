@@ -1,8 +1,8 @@
 # HouseRulesGuide
 
-081625 Created by Degederon for Demeo gamers.
+081925 Created by Degederon for Demeo gamers.
 
-Version 3.0 PM Edition
+Version 3.2 PM Edition
 
 Send feedback to: Demeo@epomd.com
 
@@ -29,6 +29,8 @@ Here are some new areas of interest.
 * The rules and configuration section is getting overhauled and expanded. The authors documentation is very good and the examples you will see will expand how the rule is to be used and behaves in real life!
 * YouTube play throughs are being planned. If you would like me to join you, send an invite to Demeo@epomd.com and we will record for entertainment value and get it on YouTube!
 * All maps are in this version with beautiful screen captures.
+* New Rulesets created, tested and available for you to download and try out.
+
 
 
 Coming soon are expanded troubleshooting and brand new scenarios I will be releasing on GitHub!
@@ -41,5 +43,5 @@ Thanks,
 
 Dege
 
-&nbsp; 
+ 
 
