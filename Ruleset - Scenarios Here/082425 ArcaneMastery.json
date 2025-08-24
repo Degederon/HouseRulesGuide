@@ -1,0 +1,74 @@
+{
+  "Name": "Arcane Mastery", // Dege's Campaign name displayed in-game, indicating a spell-focused magical adventure
+  "Description": "A spell-focused campaign where all classes wield tailored spells, with enhanced damage, free casts on crits, and tactical advantages for a magical adventure.", // In-game description summarizing the campaign's theme and mechanics
+  "Rules": [
+    {
+      "Rule": "CardClassRestrictionOverridden", // Overrides default class restrictions for specific cards, allowing non-standard classes to use them
+      "Config": {
+        "Fireball": "HeroSorcerer", // Restricts Fireball to Sorcerer only (changed from allowing Guardian/Barbarian) to preserve Sorcerer's unique AoE role
+        "Zap": "HeroSorcerer", // Allows Sorcerer to use Zap, a quick electric spell, fitting their magical theme
+        "Zap": "HeroHunter", // Allows Hunter to use Zap, rethemed as a precision electric strike, enhancing ranged flexibility
+        "Zap": "HeroRogue", // Allows Rogue to use Zap, complementing stealth with fast spell damage
+        "Heal": "HeroGuardian", // Allows Guardian to use Heal, enabling tank sustain in spell-heavy campaign
+        "Heal": "HeroBard", // Allows Bard to use Heal, reinforcing their support role
+        "Heal": "HeroSorcerer", // Allows Sorcerer to use Heal, adding versatility to their magical toolkit
+        "Whirlwind": "HeroBarbarian", // Allows Barbarian to use Whirlwind, rethemed as a magical burst for melee AoE
+        "Whirlwind": "HeroGuardian", // Allows Guardian to use Whirlwind, enhancing tanking with magical AoE damage
+        "HunterArrow": "HeroHunter", // Allows Hunter to use HunterArrow, rethemed as a precision magical shot
+        "HunterArrow": "HeroRogue" // Allows Rogue to use HunterArrow, aligning with their agile, precise playstyle
+      }
+      // Purpose: Expands spell access to create a magical focus, but limits Fireball to Sorcerer to maintain class identity. Modders can add more classes (e.g., HeroWarlock) for broader spell sharing, but beware of reducing class uniqueness.
+    },
+    {
+      "Rule": "AbilityDamageOverridden", // Overrides default damage values for specific abilities to balance spell power
+      "Config": {
+        "Fireball": [6, 12], // Sets Fireball to 6 normal/12 crit damage (reduced from 8/16) for balanced AoE; high enough to clear groups but not trivialize encounters
+        "Zap": [3, 6], // Sets Zap to 3 normal/6 crit damage (reduced from 4/8) for quick, low-cost electric hits; encourages frequent use without overpowering
+        "HunterArrow": [6, 12], // Sets HunterArrow to 6 normal/12 crit damage for strong ranged precision; unchanged to maintain Hunter/Rogue viability
+        "Whirlwind": [5, 10] // Sets Whirlwind to 5 normal/10 crit damage for melee AoE; unchanged to support Barbarian/Guardian roles without overshadowing Fireball
+      }
+      // Purpose: Adjusts spell damage to ensure impactful magical combat while preventing one-shot clears, especially with reduced enemy health. Modders can tweak values (e.g., Fireball [7,14]) for harder fights but should test for balance.
+    },
+    {
+      "Rule": "AbilityHealOverridden", // Overrides default healing values for specific abilities to support party sustain
+      "Config": {
+        "Heal": 8, // Sets Heal to restore 8 health (reduced from 10) to balance sustain with risk in spell-heavy fights
+        "HealingLight": 10 // Sets HealingLight to restore 10 health (reduced from 12) for stronger burst healing, reserved for key moments
+      }
+      // Purpose: Enhances healing to counter enemy damage but keeps it moderate to maintain challenge. Modders can increase Heal to 10 for easier runs or add other heals (e.g., Rejuvenation) for variety.
+    },
+    {
+      "Rule": "FreeAbilityOnCrit", // Allows specific abilities to cost 0 action points after a critical hit, rewarding aggressive play
+      "Config": {
+        "HeroSorcerer": "Fireball", // Fireball costs 0 AP after a Sorcerer crit, enabling powerful AoE chains
+        "HeroSorcerer": "Zap", // Zap costs 0 AP after a Sorcerer crit, encouraging rapid spell combos
+        "HeroHunter": "HunterArrow" // HunterArrow costs 0 AP after a Hunter crit, boosting ranged precision chains
+      }
+      // Purpose: Rewards crit-focused play with free casts, enhancing the magical power fantasy. Modders can add classes (e.g., HeroRogue for Zap) but should avoid overuse to prevent spam (e.g., limit to one free cast per turn).
+    },
+    {
+      "Rule": "GoldPickedUpMultiplied", // Multiplies gold collected from pickups to adjust economy
+      "Config": 1.1 // Increases gold by 10% (reduced from 25%) to allow more item purchases (e.g., potions, scrolls) without flooding the economy
+      // Purpose: Supports spell builds with extra resources for items while keeping economy balanced. Modders can adjust to 1.2 for more loot or 1.0 to remove boost for harder runs.
+    },
+    {
+      "Rule": "EnemyDoorOpeningDisabled", // Prevents enemies from opening doors to initiate encounters
+      "Config": true // Disables enemy door opening, giving players control over encounter pacing
+      // Purpose: Allows strategic spell setup (e.g., positioning for Fireball) before fights, fitting the tactical magic theme. Modders can set to false for more aggressive enemy behavior, increasing difficulty.
+    },
+    {
+      "Rule": "EnemyHealthScaled", // Scales enemy health globally to adjust combat difficulty
+      "Config": 1.0 // Sets enemy health to 100% (increased from 0.85) for standard durability, balancing boosted spell damage
+      // Purpose: Ensures enemies are challenging enough to require tactical spell use, avoiding overly quick clears. Modders can reduce to 0.9 for easier runs or increase to 1.1 for tougher fights.
+    },
+    {
+      "Rule": "LevelSequenceOverridden", // Defines the sequence of levels for the campaign, overriding default progression
+      "Config": [
+        "Level_ElvenQueen", // First level: a magical forest-themed dungeon with Elven enemies, fitting the arcane theme
+        "Level_RealmOfTheRatKing", // Second level: a gritty underground dungeon with hordes, testing spell endurance
+        "Level_BlackSarcophagus" // Third level: added for a climactic, dark magical dungeon to extend campaign length and variety
+      ]
+      // Purpose: Creates a thematic progression from mystical to gritty to dark, with three levels for better pacing (added third level improves depth). Modders can swap levels (e.g., "Level_SerpentLord") or add more for longer campaigns, but ensure enemy compatibility.
+    }
+  ]
+}
