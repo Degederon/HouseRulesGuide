@@ -1,8 +1,8 @@
 # HouseRulesGuide
 
-081925 Created by Degederon for Demeo gamers.
+082425 Created by Degederon for Demeo gamers.
 
-Version 3.2 PM Edition
+Version 3.3 PM Edition
 
 Send feedback to: Demeo@epomd.com
 
@@ -24,9 +24,7 @@ Here are some new areas of interest.
 
 
 
-* New Card section - Tested as many cards as possible and revealed my results.
-* I implemented a Ready to Go(RTG) installation process that will virtually eliminate all of the downloads required. Take a look!
-* The rules and configuration section is getting overhauled and expanded. The authors documentation is very good and the examples you will see will expand how the rule is to be used and behaves in real life!
+* Section 25 is really coming along and introduces a series of custom and fully commented rulesets. Even tried my hand at creating a Guardian and Bard only ruleset. It plays four full and balanced levels of gameplay. Introducing AI in the mix to check for a balanced gameplay. Check it out and send your comments to Demeo@epomd.com. More are coming!
 * YouTube play throughs are being planned. If you would like me to join you, send an invite to Demeo@epomd.com and we will record for entertainment value and get it on YouTube!
 * All maps are in this version with beautiful screen captures.
 * New Rulesets created, tested and available for you to download and try out.
