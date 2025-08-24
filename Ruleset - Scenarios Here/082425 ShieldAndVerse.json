@@ -1,0 +1,869 @@
+{
+  "Name": "Shield and Verse", // Campaign name displayed in-game
+  "Description": "The Guardian’s shield and the Bard’s verse unite to conquer relentless abyssal threats.", // Flavor text describing the campaign's theme
+  "Rules": [
+    {
+      "Rule": "StartCardsModified", // Overrides default starting cards for heroes
+      "Config": {
+        "HeroBard": [ // Bard's starting deck, emphasizing healing and buffs
+          {"Card": "Heal", "ReplenishFrequency": 1}, // Frequent heal card (12 health) for sustain
+          {"Card": "TurretHealProjectile", "ReplenishFrequency": 1}, // Frequent AoE heal (12 health) for group sustain
+          {"Card": "StrengthenCourage", "ReplenishFrequency": 1}, // Frequent buff to boost Guardian's damage/tanking
+          {"Card": "CoinFlip", "ReplenishFrequency": 0}, // One-time utility for random effects
+          {"Card": "SongOfRecovery", "ReplenishFrequency": 0}, // AoE heal (5/turn, 4 turns) for recovery
+          {"Card": "ShatteringVoice", "ReplenishFrequency": 0}, // Crowd control (damage [5,10]) to disrupt enemies
+          {"Card": "Tornado", "ReplenishFrequency": 0}, // AoE control to reposition enemies
+          {"Card": "LuckPotion", "ReplenishFrequency": 0}, // Boosts critical hit chance
+          {"Card": "Heal", "ReplenishFrequency": 1} // Duplicate for reliability, but consider removing if deck feels bloated
+        ],
+        "HeroGuardian": [ // Guardian's starting deck, focusing on tanking and AoE damage
+          {"Card": "Heal", "ReplenishFrequency": 1}, // Frequent heal (12 health) for self-sustain
+          {"Card": "WhirlWind", "ReplenishFrequency": 1}, // Frequent AoE attack ([6,12], radius 2) for crowd clear
+          {"Card": "ReplenishArmor", "ReplenishFrequency": 1}, // Frequent armor restore (free action) for tanking
+          {"Card": "PiercingSpear", "ReplenishFrequency": 0}, // High-damage single-target ([7,14]) for key threats
+          {"Card": "Charge", "ReplenishFrequency": 0}, // Mobility and damage ([6,12]) to engage enemies
+          {"Card": "BeaconOfSmite", "ReplenishFrequency": 0}, // Summonable damage source for sustained fights
+          {"Card": "Grab", "ReplenishFrequency": 0}, // Pulls enemies to control positioning
+          {"Card": "DeathBeam", "ReplenishFrequency": 0}, // High-damage single-target for emergencies
+          {"Card": "CoinFlip", "ReplenishFrequency": 0}, // Utility for random effects
+          {"Card": "ReplenishArmor", "ReplenishFrequency": 1} // Duplicate for tanking reliability, consider removing
+        ]
+      }
+    },
+    {
+      "Rule": "PieceConfigAdjusted", // Adjusts stats for heroes, enemies, and objects
+      "Config": [
+        // HeroBard: Support role, squishy but mobile
+        {"Piece": "HeroBard", "Property": "StartHealth", "Value": 12.0}, // Low health, relies on heals
+        {"Piece": "HeroBard", "Property": "ActionPoint", "Value": 5.0}, // Increased from 4.0 for more healing/buff actions
+        {"Piece": "HeroBard", "Property": "AttackDamage", "Value": 3.0}, // Weak melee to focus on support
+        {"Piece": "HeroBard", "Property": "CriticalHitDamage", "Value": 6.0}, // Low crit to reinforce support role
+        {"Piece": "HeroBard", "Property": "MoveRange", "Value": 6.0}, // High mobility to avoid hazards
+        // HeroGuardian: Tank role, durable but slow
+        {"Piece": "HeroGuardian", "Property": "StartHealth", "Value": 18.0}, // High health for tanking
+        {"Piece": "HeroGuardian", "Property": "ActionPoint", "Value": 5.0}, // High actions for tanking/damagE
+        {"Piece": "HeroGuardian", "Property": "AttackDamage", "Value": 5.0}, // Moderate melee damage 5
+        {"Piece": "HeroGuardian", "Property": "CriticalHitDamage", "Value": 12.0}, // Increased from 10.0 for better damage
+        {"Piece": "HeroGuardian", "Property": "MoveRange", "Value": 4.0}, // Low mobility, relies on positioning
+        // Enemies: Balanced for two-player challenge
+        {"Piece": "Mimic", "Property": "BerserkBelowHealth", "Value": 0.99}, // Aggressive at low health
+        {"Piece": "Mimic", "Property": "StartArmor", "Value": 12.0}, // Moderate armor for durability
+        {"Piece": "Mimic", "Property": "StartHealth", "Value": 25.0}, // Moderate health for keyholder
+        {"Piece": "Mimic", "Property": "MoveRange", "Value": 3.0}, // Limited mobility
+        {"Piece": "Mimic", "Property": "AttackDamage", "Value": 5.0}, // Moderate damage
+        {"Piece": "ChestGoblin", "Property": "AttackDamage", "Value": 1.0}, // Weak attack, focus on stealing
+        {"Piece": "ChestGoblin", "Property": "StartHealth", "Value": 5.0}, // Low health for easy kills
+        {"Piece": "ChestGoblin", "Property": "MoveRange", "Value": 3.0}, // Moderate mobility
+        {"Piece": "Wyvern", "Property": "BerserkBelowHealth", "Value": 0.65}, // Aggressive at mid-health
+        {"Piece": "Wyvern", "Property": "StartArmor", "Value": 14.0}, // Higher armor for challenge
+        {"Piece": "Wyvern", "Property": "MoveRange", "Value": 1.0}, // Low mobility, relies on attacks
+        {"Piece": "Wyvern", "Property": "AttackDamage", "Value": 5.0}, // Moderate damage
+        {"Piece": "Wyvern", "Property": "StartHealth", "Value": 25.0}, // Moderate health for keyholder
+        // Environmental hazards: Add risk to movement
+        {"Piece": "Bandit", "Property": "WaterTrailChance", "Value": 0.15}, // 15% chance to leave water hazard
+        {"Piece": "Thug", "Property": "WaterTrailChance", "Value": 0.15},
+        {"Piece": "KillerBee", "Property": "WaterTrailChance", "Value": 0.15},
+        {"Piece": "Rat", "Property": "WaterTrailChance", "Value": 0.15},
+        {"Piece": "Spider", "Property": "WaterTrailChance", "Value": 0.15},
+        {"Piece": "ElvenHound", "Property": "WaterTrailChance", "Value": 0.15},
+        // Summons and objects: Balanced for utility
+        {"Piece": "Verochka", "Property": "StartHealth", "Value": 12.0}, // Moderate summon health
+        {"Piece": "WarlockMinion", "Property": "StartHealth", "Value": 12.0},
+        {"Piece": "Barricade", "Property": "StartHealth", "Value": 15.0}, // Durable obstacle
+        {"Piece": "HealingBeacon", "Property": "StartHealth", "Value": 14.0}, // Sustained healing source
+        {"Piece": "MonsterBait", "Property": "StartHealth", "Value": 14.0}, // Durable distraction
+        {"Piece": "SmiteWard", "Property": "StartHealth", "Value": 12.0}, // Damage-dealing summon
+        {"Piece": "SwordOfAvalon", "Property": "StartHealth", "Value": 20.0}, // High-health summon
+        {"Piece": "Verochka", "Property": "AttackDamage", "Value": 8.0}, // Strong summon attack
+        {"Piece": "WarlockMinion", "Property": "AttackDamage", "Value": 8.0},
+        {"Piece": "SmiteWard", "Property": "AttackDamage", "Value": 4.0}, // Moderate summon damage
+        {"Piece": "SwordOfAvalon", "Property": "AttackDamage", "Value": 4.0}
+      ]
+    },
+    {
+      "Rule": "CardAdditionOverridden", // Defines additional cards heroes can acquire
+      "Config": {
+        "HeroBard": [ // Support-focused cards, duplicates removed for variety
+          "Bone", "WebBomb", "Regroup", // Utility for minor effects
+          "Rejuvenation", // Strong heal (15 health)
+          "FreeAP", // Grants extra action point
+          "ScarePowder", // Crowd control to scatter enemies
+          "DeathBeam", // High-damage single-target
+          "MiniBarricade", // Small obstacle for positioning
+          "SodiumHydroxide", // Environmental damage
+          "GodsFury", // High-damage AoE
+          "Teleport", // Mobility for repositioning
+          "BeaconOfSmite", // Summonable damage source
+          "SwordOfAvalon", // Durable summon
+          "Speed", // Boosts move range
+          "VigorPotion", // Health regen
+          "ScrollElectricity", // AoE damage
+          "ScrollTsunami", // AoE control
+          "LuckPotion", // Crit chance boost
+          "VialOfIceImmunity", // Hazard protection
+          "VialOfFireImmunity", // Hazard protection
+          "ExtraActionPotion", // Extra action point
+          "DamageResistPotion", // Damage mitigation
+          "WaterBottle", // Clears hazards
+          "SongOfRecovery", // AoE heal (5/turn, 4 turns)
+          "SongOfResilience", // AoE buff (radius 2)
+          "BlockAbilities", // Disrupts enemy casts
+          "ShatteringVoice", // AoE damage ([5,10])
+          "Tornado", // AoE repositioning
+          "NotesOfConfusion", // Debuffs enemies
+          "MagicShield" // Added: Defensive buff for survivability
+        ],
+        "HeroGuardian": [ // Tanking/damage cards, duplicates removed
+          "Bone", "WebBomb", "DeathBeam", // Utility and high-damage
+          "Rejuvenation", // Strong heal
+          "FreeAP", "ScarePowder", // Utility and control
+          "MiniBarricade", "SodiumHydroxide", // Positioning and environmental
+          "Teleport", "Strength", // Mobility and damage buff
+          "Speed", "Heal", // Mobility and sustain
+          "VigorPotion", "ScrollElectricity", "ScrollTsunami", // Utility and AoE
+          "LuckPotion", "VialOfIceImmunity", // Crit and protection
+          "BeaconOfSmite", "SwordOfAvalon", // Summons for damage
+          "VialOfFireImmunity", "ExtraActionPotion", // Protection and actions
+          "DamageResistPotion", "WaterBottle", // Mitigation and hazard clear
+          "BeaconOfHealing", // AoE healing summon
+          "Invulnerability", // Temporary tanking boost
+          "WhirlWind", // AoE damage ([6,12], radius 2)
+          "PiercingSpear", // Single-target ([7,14])
+          "Charge", // Mobility/damage ([6,12])
+          "TauntingScream" // Added: Draws enemy aggro to enhance tanking
+        ]
+      }
+    },
+    {
+      "Rule": "StatusEffectConfig", // Defines custom status effects and their behavior
+      "Config": [
+        {
+          "effectStateType": "TorchPlayer", // Light source for exploration
+          "durationTurns": 25, // Long duration for sustained use
+          "tickWhen": "EndTurn", // Triggers at turn end
+          "stacks": false, // Non-stackable
+          "damagePerTurn": 0, // No damage
+          "clearOnNewLevel": false, // Persists across floors
+          "damageTags": null, // No specific damage type
+          "healPerTurn": 0, // No healing
+          "healthBoost": 0, // No health increase
+          "killOnExpire": false, // Doesn't kill on end
+          "counterAttackDirections": 0, // No counterattack
+          "counterAttackDamage": 0,
+          "applyAfterDissipate": "Diseased", // Applies debuff when ending
+          "useOnDissipate": 0 // No additional action
+        },
+        {
+          "effectStateType": "HealingSong", // Bard's AoE healing buff
+          "durationTurns": 4, // Moderate duration
+          "tickWhen": "EndTurn",
+          "stacks": false,
+          "damagePerTurn": 0,
+          "clearOnNewLevel": false,
+          "damageTags": null,
+          "healPerTurn": 5, // Strong sustain
+          "healthBoost": 0,
+          "killOnExpire": false,
+          "counterAttackDirections": 0,
+          "counterAttackDamage": 0,
+          "applyAfterDissipate": "Diseased", // Risk to balance healing
+          "useOnDissipate": 0
+        },
+        {
+          "effectStateType": "Recovery", // Another healing effect
+          "durationTurns": 4,
+          "tickWhen": "EndTurn",
+          "stacks": false,
+          "damagePerTurn": 0,
+          "clearOnNewLevel": false,
+          "damageTags": null,
+          "healPerTurn": 5,
+          "healthBoost": 0,
+          "killOnExpire": false,
+          "counterAttackDirections": 0,
+          "counterAttackDamage": 0,
+          "applyAfterDissipate": "Diseased",
+          "useOnDissipate": 0
+        },
+        {
+          "effectStateType": "Courageous", // Buff with minor healing
+          "durationTurns": 5, // Longer duration
+          "tickWhen": "EndTurn",
+          "stacks": false,
+          "damagePerTurn": 0,
+          "clearOnNewLevel": false,
+          "damageTags": null,
+          "healPerTurn": 3, // Lighter sustain
+          "healthBoost": 0,
+          "killOnExpire": false,
+          "counterAttackDirections": 0,
+          "counterAttackDamage": 0,
+          "applyAfterDissipate": "Diseased",
+          "useOnDissipate": 0
+        },
+        {
+          "effectStateType": "Heroic", // Buff without healing
+          "durationTurns": 5,
+          "tickWhen": "EndTurn",
+          "stacks": false,
+          "damagePerTurn": 0,
+          "clearOnNewLevel": false,
+          "damageTags": null,
+          "healPerTurn": 0,
+          "healthBoost": 0,
+          "killOnExpire": false,
+          "counterAttackDirections": 0,
+          "counterAttackDamage": 0,
+          "applyAfterDissipate": "Diseased",
+          "useOnDissipate": 0
+        },
+        {
+          "effectStateType": "Fearless", // Buff for morale/damage
+          "durationTurns": 5,
+          "tickWhen": "EndTurn",
+          "stacks": false,
+          "damagePerTurn": 0,
+          "clearOnNewLevel": false,
+          "damageTags": null,
+          "healPerTurn": 0,
+          "healthBoost": 0,
+          "killOnExpire": false,
+          "counterAttackDirections": 0,
+          "counterAttackDamage": 0,
+          "applyAfterDissipate": "Diseased",
+          "useOnDissipate": 0
+        }
+      ]
+    },
+    {
+      "Rule": "PieceAbilityListOverridden", // Custom enemy abilities for dynamic fights
+      "Config": {
+        "EarthElemental": [
+          "EnemyMelee", // Standard attack
+          "EnemyKnockbackMelee", // Pushes players back
+          "EarthShatter", // AoE damage
+          "EnemyJavelin" // Ranged attack
+        ],
+        "Mimic": [
+          "EnemyMelee",
+          "AcidSpit" // Ranged hazard attack
+        ],
+        "RootMage": [
+          "EnemyMelee",
+          "TeleportEnemy" // Repositions allies
+        ],
+        "ChestGoblin": [
+          "EnemyMelee",
+          "EnemyStealGold" // Steals resources
+        ],
+        "KillerBee": [
+          "EnemyMelee",
+          "ThornPowder" // Debuffing ranged attack
+        ]
+      }
+    },
+    {
+      "Rule": "PieceBehavioursListOverridden", // Custom enemy AI behaviors
+      "Config": {
+        "EarthElemental": [
+          "Patrol", // Moves in set patterns
+          "AttackPlayer", // Engages nearby players
+          "EarthShatter", // Uses AoE ability
+          "RangedAttackHighPrio" // Prioritizes ranged attacks
+        ],
+        "Mimic": [
+          "Patrol",
+          "AttackPlayer",
+          "RangedAttackHighPrio" // Focuses on AcidSpit
+        ],
+        "RootMage": [
+          "Patrol",
+          "AttackPlayer",
+          "CastOnTeam" // Buffs allies
+        ],
+        "KillerBee": [
+          "Patrol",
+          "AttackPlayer",
+          "RangedAttackHighPrio" // Focuses on ThornPowder
+        ],
+        "ChestGoblin": [
+          "Patrol",
+          "FollowPlayerMeleeAttacker", // Chases players
+          "AttackAndRetreat" // Hits and runs
+        ]
+      }
+    },
+    {
+      "Rule": "PieceImmunityListAdjusted", // Grants heroes immunities to specific effects
+      "Config": {
+        "HeroGuardian": ["Weaken1Turn", "Weaken2Turns"], // Immune to weakening for tanking
+        "HeroBard": ["Diseased"] // Immune to Diseased from buffs
+      }
+    },
+    {
+      "Rule": "PieceUseWhenKilledOverridden", // Defines effects when enemies die
+      "Config": {
+        "ChestGoblin": ["EnemyDropStolenGoods", "DropChest"], // Drops loot and chest
+        "EarthElemental": ["Explosion", "DeathDropJavelin"] // Explodes and drops weapon
+      }
+    },
+    {
+      "Rule": "AbilityActionCostAdjusted", // Sets action point costs for abilities
+      "Config": {
+        "Zap": false, // Free action for quick damage
+        "Overcharge": false, // Free for burst damage
+        "LightningBolt": false, // Free for AoE
+        "ReplenishArmor": false, // Free to ensure tanking
+        "HunterArrow": false, // Free for ranged damage
+        "Stealth": false, // Free for positioning
+        "StrengthenCourage": false, // Free to promote buffs
+        "SpawnCultists": true, // Costs AP to limit summons
+        "DamageResistPotion": true, // Costs AP for balance
+        "Grapple": false, // Free for control
+        "CallCompanion": true, // Costs AP for summons
+        "MagicMissile": false, // Free for quick damage
+        "MinionCharge": true // Costs AP for summon movement
+      }
+    },
+    {
+      "Rule": "AbilityHealOverridden", // Adjusts healing values
+      "Config": {
+        "Heal": 12, // Moderate single-target heal
+        "Rejuvenation": 15, // Strong single-target heal
+        "AltarHeal": 12, // Moderate AoE heal
+        "TurretHealProjectile": 12 // Moderate AoE heal
+      }
+    },
+    {
+      "Rule": "AbilityAoeAdjusted", // Sets AoE radius for abilities
+      "Config": {
+        "Fireball": 2, // Large AoE for damage
+        "SongOfResilience": 2, // Large AoE for buffs
+        "FlashBang": 2, // Large AoE for control
+        "WebBomb": 2, // Large AoE for slowing
+        "PoisonGasGrenade": 2, // Large AoE for DoT
+        "WarCry": 2, // Large AoE for buffs
+        "WhirlWind": 2, // Large AoE for damage
+        "Exterminate": 2 // Large AoE for damage
+      }
+    },
+    {
+      "Rule": "AbilityDamageOverridden", // Adjusts damage ranges
+      "Config": {
+        "HunterArrow": [5,10], // Moderate ranged damage
+        "Blink": [7,14], // High mobility damage
+        "Charge": [6,12], // Moderate mobility damage
+        "CursedDagger": [6,12], // Moderate melee damage
+        "Fireball": [10,16], // High AoE damage
+        "Freeze": [10,16], // High control damage
+        "Grapple": [6,12], // Moderate control damage
+        "Exterminate": [7,14], // High AoE damage
+        "PiercingSpear": [7,14], // High single-target damage
+        "NotesOfConfusion": [5,10], // Moderate debuff damage
+        "PoisonedTip": [5,10], // Moderate DoT damage
+        "ShatteringVoice": [5,10], // Moderate AoE damage
+        "WhirlWind": [6,12], // Moderate AoE damage
+        "MagicMissile": [6,12], // Moderate ranged damage
+        "Zap": [6,12] // Moderate quick damage
+      }
+    },
+    {
+      "Rule": "BackstabConfigOverridden", // Disables backstab mechanics
+      "Config": [] // No backstab bonuses for simplicity
+    },
+    {
+      "Rule": "PetsFocusHunterMark", // Disables pet targeting
+      "Config": false // Pets don't prioritize marked targets
+    },
+    {
+      "Rule": "EnemyRespawnDisabled", // Prevents enemy respawns
+      "Config": true // Encourages clearing floors fully
+    },
+    {
+      "Rule": "CardEnergyFromAttackMultiplied", // Reduces energy gain from attacks
+      "Config": 0.80 // 80% of normal to promote card management
+    },
+    {
+      "Rule": "CardEnergyFromRecyclingMultiplied", // Reduces energy from recycling
+      "Config": 0.75 // 75% of normal to limit spamming
+    },
+    {
+      "Rule": "EnemyAttackScaled", // Scales enemy attack
+      "Config": 1.1 // Reduced from 1.25 for two-player balance
+    },
+    {
+      "Rule": "EnemyHealthScaled", // Scales enemy health
+      "Config": 1.0 // Reduced from 1.2 for manageable fights
+    },
+    {
+      "Rule": "TileEffectDurationOverridden", // Adjusts hazard durations
+      "Config": {
+        "Gas": 6, // Moderate DoT hazard
+        "Acid": 3, // Short DoT hazard
+        "Web": 4, // Moderate slowing hazard
+        "Water": 6, // Reduced from 8 to ease mobility
+        "Target": 1 // Short targeting effect
+      }
+    },
+    {
+      "Rule": "MonsterDeckOverridden", // Defines enemy spawns per floor
+      "Config": {
+        "EntranceDeckFloor1": { // Initial enemies on Floor 1
+          "ElvenSpearman": 0,
+          "LargeCorruption": 0,
+          "ReptileArcher": 1, // Minor ranged threat
+          "ScarabSandPile": 1, // Environmental hazard
+          "SandScorpion": 0,
+          "ReptileMutantWizard": 0,
+          "GoldSandPile": 1, // Resource drop
+          "SmallCorruption": 0,
+          "GeneralRonthian": 1, // Strong enemy
+          "TheUnseen": 1, // Stealth enemy
+          "ElvenArcher": 0,
+          "ElvenHound": 1, // Fast melee
+          "RootHound": 0,
+          "TheUnspoken": 1, // Strong enemy
+          "Bandit": 1, // Weak melee
+          "DruidArcher": 0,
+          "DruidHoundMaster": 0,
+          "GoblinChieftan": 0,
+          "GoblinMadUn": 1, // Aggressive melee
+          "RootBeast": 0,
+          "ScabRat": 0,
+          "Spider": 0,
+          "Rat": 0,
+          "TheUnheard": 1, // Stealth enemy
+          "Slimeling": 0,
+          "Thug": 0,
+          "ElvenMystic": 0,
+          "ElvenPriest": 1, // Support enemy
+          "ElvenSkirmisher": 0,
+          "GoblinFighter": 0,
+          "GoblinRanger": 0,
+          "SpiderEgg": 0,
+          "SporeFungus": 0,
+          "RatNest": 0,
+          "CultMemberElder": 1, // Support enemy
+          "RootMage": 0,
+          "KillerBee": 2, // Fast ranged threat
+          "ChestGoblin": 0,
+          "EarthElemental": 1, // Durable enemy
+          "Sigataur": 1, // Strong melee
+          "GiantSlime": 0,
+          "FireElemental": 1, // AoE threat
+          "ElvenMarauder": 0,
+          "IceElemental": 0,
+          "GiantSpider": 1, // Durable enemy
+          "Cavetroll": 0,
+          "RootGolem": 1, // Tanky enemy
+          "Brookmare": 1, // Boss-level threat
+          "Gorgon": 1, // Control enemy
+          "SilentSentinel": 1, // Durable enemy
+          "BigBoiMutant": 1, // Strong enemy
+          "ServantOfAlfaragh": 1, // Strong enemy
+          "Mimic": 5 // Keyholder, high spawn chance
+        },
+        "ExitDeckFloor1": { // Enemies near exit on Floor 1
+          "ElvenSpearman": 1,
+          "ReptileArcher": 0,
+          "ReptileMutantWizard": 0,
+          "SmallCorruption": 0,
+          "GeneralRonthian": 0,
+          "TheUnseen": 0,
+          "EmptySandPile": 1,
+          "ElvenArcher": 0,
+          "ElvenHound": 0,
+          "RootHound": 0,
+          "TheUnspoken": 0,
+          "Bandit": 0,
+          "DruidArcher": 1,
+          "DruidHoundMaster": 1,
+          "GoblinChieftan": 1,
+          "GoblinMadUn": 0,
+          "RootBeast": 0,
+          "ScabRat": 0,
+          "TheUnheard": 0,
+          "Slimeling": 0,
+          "Thug": 2,
+          "ElvenMystic": 0,
+          "ElvenPriest": 1,
+          "ElvenSkirmisher": 0,
+          "GoblinRanger": 1,
+          "CultMemberElder": 1,
+          "RootMage": 1,
+          "KillerBee": 0,
+          "ChestGoblin": 0,
+          "EarthElemental": 0,
+          "Sigataur": 0,
+          "GiantSlime": 0,
+          "FireElemental": 0,
+          "ElvenMarauder": 1,
+          "IceElemental": 0,
+          "GiantSpider": 0,
+          "Cavetroll": 1,
+          "RootGolem": 0,
+          "Brookmare": 0,
+          "Gorgon": 0,
+          "SilentSentinel": 0,
+          "BigBoiMutant": 0,
+          "ServantOfAlfaragh": 0,
+          "Mimic": 3 // Keyholder, moderate spawn
+        },
+        "EntranceDeckFloor2": { // Initial enemies on Floor 2
+          "ElvenSpearman": 0,
+          "LargeCorruption": 0,
+          "ReptileArcher": 1,
+          "ScarabSandPile": 1,
+          "SandScorpion": 0,
+          "ReptileMutantWizard": 0,
+          "GoldSandPile": 1,
+          "SmallCorruption": 0,
+          "GeneralRonthian": 1,
+          "TheUnseen": 1,
+          "ElvenArcher": 0,
+          "ElvenHound": 1,
+          "RootHound": 0,
+          "TheUnspoken": 1,
+          "Bandit": 1,
+          "DruidArcher": 0,
+          "DruidHoundMaster": 0,
+          "GoblinChieftan": 0,
+          "GoblinMadUn": 1,
+          "RootBeast": 0,
+          "ScabRat": 0,
+          "Spider": 0,
+          "Rat": 0,
+          "TheUnheard": 1,
+          "Slimeling": 0,
+          "Thug": 0,
+          "ElvenMystic": 0,
+          "ElvenPriest": 1,
+          "ElvenSkirmisher": 0,
+          "GoblinFighter": 0,
+          "GoblinRanger": 0,
+          "SpiderEgg": 0,
+          "SporeFungus": 0,
+          "RatNest": 0,
+          "CultMemberElder": 1,
+          "RootMage": 0,
+          "KillerBee": 2,
+          "ChestGoblin": 0,
+          "EarthElemental": 1,
+          "Sigataur": 1,
+          "GiantSlime": 0,
+          "FireElemental": 1,
+          "ElvenMarauder": 0,
+          "IceElemental": 0,
+          "GiantSpider": 1,
+          "Cavetroll": 1,
+          "RootGolem": 1,
+          "Brookmare": 1,
+          "Gorgon": 1,
+          "SilentSentinel": 1,
+          "BigBoiMutant": 1,
+          "ServantOfAlfaragh": 1,
+          "Wyvern": 5 // Keyholder, increased from 1 for reliability
+        },
+        "ExitDeckFloor2": { // Enemies near exit on Floor 2
+          "ElvenSpearman": 1,
+          "ReptileArcher": 0,
+          "ReptileMutantWizard": 0,
+          "SmallCorruption": 0,
+          "GeneralRonthian": 0,
+          "TheUnseen": 0,
+          "EmptySandPile": 1,
+          "ElvenArcher": 0,
+          "ElvenHound": 0,
+          "RootHound": 0,
+          "TheUnspoken": 0,
+          "Bandit": 0,
+          "DruidArcher": 1,
+          "DruidHoundMaster": 1,
+          "GoblinChieftan": 1,
+          "GoblinMadUn": 0,
+          "RootBeast": 0,
+          "ScabRat": 0,
+          "TheUnheard": 0,
+          "Slimeling": 0,
+          "Thug": 2,
+          "ElvenMystic": 0,
+          "ElvenPriest": 1,
+          "ElvenSkirmisher": 0,
+          "GoblinRanger": 1,
+          "CultMemberElder": 1,
+          "RootMage": 1,
+          "KillerBee": 0,
+          "ChestGoblin": 0,
+          "EarthElemental": 0,
+          "Sigataur": 0,
+          "GiantSlime": 0,
+          "FireElemental": 0,
+          "ElvenMarauder": 1,
+          "IceElemental": 0,
+          "GiantSpider": 0,
+          "Cavetroll": 1,
+          "RootGolem": 0,
+          "Brookmare": 0,
+          "Gorgon": 0,
+          "SilentSentinel": 0,
+          "BigBoiMutant": 0,
+          "ServantOfAlfaragh": 0,
+          "Wyvern": 5 // Keyholder, increased from 3
+        },
+        "EntranceDeckFloor3": { // Added: Initial enemies on Floor 3
+          "ElvenSpearman": 0,
+          "LargeCorruption": 0,
+          "ReptileArcher": 1,
+          "ScarabSandPile": 1,
+          "SandScorpion": 0,
+          "ReptileMutantWizard": 0,
+          "GoldSandPile": 1,
+          "SmallCorruption": 0,
+          "GeneralRonthian": 1,
+          "TheUnseen": 1,
+          "ElvenArcher": 0,
+          "ElvenHound": 1,
+          "RootHound": 0,
+          "TheUnspoken": 1,
+          "Bandit": 1,
+          "DruidArcher": 0,
+          "DruidHoundMaster": 0,
+          "GoblinChieftan": 0,
+          "GoblinMadUn": 1,
+          "RootBeast": 0,
+          "ScabRat": 0,
+          "Spider": 0,
+          "Rat": 0,
+          "TheUnheard": 1,
+          "Slimeling": 0,
+          "Thug": 0,
+          "ElvenMystic": 0,
+          "ElvenPriest": 1,
+          "ElvenSkirmisher": 0,
+          "GoblinFighter": 0,
+          "GoblinRanger": 0,
+          "SpiderEgg": 0,
+          "SporeFungus": 0,
+          "RatNest": 0,
+          "CultMemberElder": 1,
+          "RootMage": 0,
+          "KillerBee": 2,
+          "ChestGoblin": 0,
+          "EarthElemental": 1,
+          "Sigataur": 1,
+          "GiantSlime": 0,
+          "FireElemental": 1,
+          "ElvenMarauder": 0,
+          "IceElemental": 0,
+          "GiantSpider": 1,
+          "Cavetroll": 1,
+          "RootGolem": 1,
+          "Brookmare": 1,
+          "Gorgon": 3, // Keyholder, high spawn chance
+          "SilentSentinel": 1,
+          "BigBoiMutant": 1,
+          "ServantOfAlfaragh": 1
+        },
+        "ExitDeckFloor3": { // Added: Enemies near exit on Floor 3
+          "ElvenSpearman": 1,
+          "ReptileArcher": 0,
+          "ReptileMutantWizard": 0,
+          "SmallCorruption": 0,
+          "GeneralRonthian": 0,
+          "TheUnseen": 0,
+          "EmptySandPile": 1,
+          "ElvenArcher": 0,
+          "ElvenHound": 0,
+          "RootHound": 0,
+          "TheUnspoken": 0,
+          "Bandit": 0,
+          "DruidArcher": 1,
+          "DruidHoundMaster": 1,
+          "GoblinChieftan": 1,
+          "GoblinMadUn": 0,
+          "RootBeast": 0,
+          "ScabRat": 0,
+          "TheUnheard": 0,
+          "Slimeling": 0,
+          "Thug": 2,
+          "ElvenMystic": 0,
+          "ElvenPriest": 1,
+          "ElvenSkirmisher": 0,
+          "GoblinRanger": 1,
+          "CultMemberElder": 1,
+          "RootMage": 1,
+          "KillerBee": 0,
+          "ChestGoblin": 0,
+          "EarthElemental": 0,
+          "Sigataur": 0,
+          "GiantSlime": 0,
+          "FireElemental": 0,
+          "ElvenMarauder": 1,
+          "IceElemental": 0,
+          "GiantSpider": 0,
+          "Cavetroll": 1,
+          "RootGolem": 0,
+          "Brookmare": 0,
+          "Gorgon": 2, // Keyholder, moderate spawn
+          "SilentSentinel": 0,
+          "BigBoiMutant": 0,
+          "ServantOfAlfaragh": 0
+        },
+        "EntranceDeckFloor4": { // Added: Initial enemies on Floor 4
+          "ElvenSpearman": 0,
+          "LargeCorruption": 0,
+          "ReptileArcher": 1,
+          "ScarabSandPile": 1,
+          "SandScorpion": 0,
+          "ReptileMutantWizard": 0,
+          "GoldSandPile": 1,
+          "SmallCorruption": 0,
+          "GeneralRonthian": 1,
+          "TheUnseen": 1,
+          "ElvenArcher": 0,
+          "ElvenHound": 1,
+          "RootHound": 0,
+          "TheUnspoken": 1,
+          "Bandit": 1,
+          "DruidArcher": 0,
+          "DruidHoundMaster": 0,
+          "GoblinChieftan": 0,
+          "GoblinMadUn": 1,
+          "RootBeast": 0,
+          "ScabRat": 0,
+          "Spider": 0,
+          "Rat": 0,
+          "TheUnheard": 1,
+          "Slimeling": 0,
+          "Thug": 0,
+          "ElvenMystic": 0,
+          "ElvenPriest": 1,
+          "ElvenSkirmisher": 0,
+          "GoblinFighter": 0,
+          "GoblinRanger": 0,
+          "SpiderEgg": 0,
+          "SporeFungus": 0,
+          "RatNest": 0,
+          "CultMemberElder": 1,
+          "RootMage": 0,
+          "KillerBee": 2,
+          "ChestGoblin": 0,
+          "EarthElemental": 1,
+          "Sigataur": 1,
+          "GiantSlime": 0,
+          "FireElemental": 1,
+          "ElvenMarauder": 0,
+          "IceElemental": 0,
+          "GiantSpider": 1,
+          "Cavetroll": 1,
+          "RootGolem": 1,
+          "Brookmare": 1,
+          "Gorgon": 1,
+          "SilentSentinel": 3, // Keyholder, high spawn chance
+          "BigBoiMutant": 1,
+          "ServantOfAlfaragh": 1
+        },
+        "ExitDeckFloor4": { // Added: Enemies near exit on Floor 4
+          "ElvenSpearman": 1,
+          "ReptileArcher": 0,
+          "ReptileMutantWizard": 0,
+          "SmallCorruption": 0,
+          "GeneralRonthian": 0,
+          "TheUnseen": 0,
+          "EmptySandPile": 1,
+          "ElvenArcher": 0,
+          "ElvenHound": 0,
+          "RootHound": 0,
+          "TheUnspoken": 0,
+          "Bandit": 0,
+          "DruidArcher": 1,
+          "DruidHoundMaster": 1,
+          "GoblinChieftan": 1,
+          "GoblinMadUn": 0,
+          "RootBeast": 0,
+          "ScabRat": 0,
+          "TheUnheard": 0,
+          "Slimeling": 0,
+          "Thug": 2,
+          "ElvenMystic": 0,
+          "ElvenPriest": 1,
+          "ElvenSkirmisher": 0,
+          "GoblinRanger": 1,
+          "CultMemberElder": 1,
+          "RootMage": 1,
+          "KillerBee": 0,
+          "ChestGoblin": 0,
+          "EarthElemental": 0,
+          "Sigataur": 0,
+          "GiantSlime": 0,
+          "FireElemental": 0,
+          "ElvenMarauder": 1,
+          "IceElemental": 0,
+          "GiantSpider": 0,
+          "Cavetroll": 1,
+          "RootGolem": 0,
+          "Brookmare": 0,
+          "Gorgon": 0,
+          "SilentSentinel": 2, // Keyholder, moderate spawn
+          "BigBoiMutant": 0,
+          "ServantOfAlfaragh": 0
+        },
+        "BossDeck": { // Floor 5 boss encounter
+          "Brookmare": 1, // Aligned with "Boss" config, main boss
+          "TheUnseen": 0,
+          "TheUnheard": 0,
+          "TheUnspoken": 0,
+          "Slimeling": 0,
+          "ElvenSkirmisher": 0 // Removed for consistency
+        },
+        "KeyHolderFloor1": "Mimic", // Required enemy to progress from Floor 1
+        "KeyHolderFloor2": "Wyvern", // Required for Floor 2
+        "KeyHolderFloor3": "Gorgon", // Added for Floor 3 progression
+        "KeyHolderFloor4": "SilentSentinel", // Specified for Floor 4
+        "KeyHolderFloor5": "Brookmare", // Added for Floor 5, aligns with boss
+        "Boss": "Brookmare" // Defines main boss
+      }
+    },
+    {
+      "Rule": "LevelSequenceOverridden", // Defines floor order
+      "Config": [
+        "ElvenFloor10", // First floor, resource-heavy
+        "ElvenFloor14", // Second floor, increased difficulty
+        "ShopFloor02", // Shop interlude for restocking
+        "ElvenFloor16", // Fourth floor, high difficulty
+        "ElvenFloor17" // Final floor with boss
+      ]
+    },
+    {
+      "Rule": "LevelPropertiesModified", // Defines resources per floor
+      "Config": {
+        "BigGoldPileChance": 4, // 4% chance for large gold drops
+        "FloorOneHealingFountains": 2, // 2 healing fountains for early sustain
+        "FloorOnePotionStand": 2, // 2 potion stands for utility
+        "FloorOneMerchant": 1, // 1 merchant for card purchases
+        "FloorOneLootChests": 5, // 5 chests for early resources
+        "FloorOneGoldMaxAmount": 1500, // High gold cap
+        "FloorTwoHealingFountains": 2, // Sustains through Wyvern fight
+        "FloorTwoPotionStand": 3, // More potions for flexibility
+        "FloorTwoMerchant": 0, // No merchant to increase challenge
+        "FloorTwoLootChests": 0, // No chests to promote conservation
+        "FloorTwoGoldMaxAmount": 1500,
+        "FloorThreeHealingFountains": 2, // Sustains through mid-game
+        "FloorThreePotionStand": 2,
+        "FloorThreeMerchant": 1, // Added to provide card access
+        "FloorThreeLootChests": 2, // Added to ease scarcity
+        "FloorThreeGoldMaxAmount": 1500,
+        "FloorFourHealingFountains": 2, // Added for late-game sustain
+        "FloorFourPotionStand": 2, // Added for utility
+        "FloorFourMerchant": 1, // Added for card access
+        "FloorFourLootChests": 2, // Added to balance resources
+        "FloorFourGoldMaxAmount": 1500,
+        "FloorFiveHealingFountains": 2, // Supports boss fight
+        "FloorFivePotionStand": 2, // Utility for boss
+        "FloorFiveMerchant": 0, // No merchant to heighten challenge
+        "FloorFiveLootChests": 0, // No chests for boss focus
+        "FloorFiveGoldMaxAmount": 1500
+      }
+    }
+  ]
+}
