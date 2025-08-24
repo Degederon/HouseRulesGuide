@@ -5,6 +5,7 @@
   "Rules": [
     // Defines starting card decks for each hero with replenish frequencies (1 = frequent, 0 = one-time/rare)
     // Heroes have thematic abilities and universal cards; duplicates removed for variety
+    // August 23 2025 Updated tuning to startcardsmodified to balance characters out.
     {
       "Rule": "StartCardsModified",
       "Config": 
@@ -94,37 +95,37 @@
       "Rule": "PieceConfigAdjusted",
       "Config": [
         { "Piece": "HeroBarbarian", "Property": "StartHealth", "Value": 12.0}, // Reduced from 14.0
-        { "Piece": "HeroBarbarian", "Property": "ActionPoint", "Value": 50.0}, // Limited actions
+        { "Piece": "HeroBarbarian", "Property": "ActionPoint", "Value": 5.0}, // Limited actions
         { "Piece": "HeroBarbarian", "Property": "AttackDamage", "Value": 4.0}, // Reduced from 5.0
         { "Piece": "HeroBarbarian", "Property": "CriticalHitDamage", "Value": 10.0}, // Reduced from 12.0
         { "Piece": "HeroBarbarian", "Property": "MoveRange", "Value": 6.0}, // Limited movement
         { "Piece": "HeroBard", "Property": "StartHealth", "Value": 12.0}, // Reduced from 14.0
-        { "Piece": "HeroBard", "Property": "ActionPoint", "Value": 50.0}, // Limited actions
+        { "Piece": "HeroBard", "Property": "ActionPoint", "Value": 5.0}, // Limited actions
         { "Piece": "HeroBard", "Property": "AttackDamage", "Value": 4.0}, // Reduced from 5.0
         { "Piece": "HeroBard", "Property": "CriticalHitDamage", "Value": 10.0}, // Reduced from 12.0
         { "Piece": "HeroBard", "Property": "MoveRange", "Value": 6.0}, // Limited movement
         { "Piece": "HeroGuardian", "Property": "StartHealth", "Value": 12.0}, // Reduced from 14.0
-        { "Piece": "HeroGuardian", "Property": "ActionPoint", "Value": 50.0}, // Limited actions
+        { "Piece": "HeroGuardian", "Property": "ActionPoint", "Value": 5.0}, // Limited actions
         { "Piece": "HeroGuardian", "Property": "AttackDamage", "Value": 5.0}, // Fixed from 100.0
         { "Piece": "HeroGuardian", "Property": "CriticalHitDamage", "Value": 10.0}, // Reduced from 12.0
         { "Piece": "HeroGuardian", "Property": "MoveRange", "Value": 4.0}, // Reduced from 5.0 for tank role
         { "Piece": "HeroHunter", "Property": "StartHealth", "Value": 12.0}, // Reduced from 14.0
-        { "Piece": "HeroHunter", "Property": "ActionPoint", "Value": 50.0}, // Limited actions
+        { "Piece": "HeroHunter", "Property": "ActionPoint", "Value": 5.0}, // Limited actions
         { "Piece": "HeroHunter", "Property": "AttackDamage", "Value": 6.0}, // Reduced from 7.0
         { "Piece": "HeroHunter", "Property": "CriticalHitDamage", "Value": 11.0}, // Reduced from 13.0
         { "Piece": "HeroHunter", "Property": "MoveRange", "Value": 6.0}, // Limited movement
         { "Piece": "HeroRogue", "Property": "StartHealth", "Value": 12.0}, // Reduced from 14.0
-        { "Piece": "HeroRogue", "Property": "ActionPoint", "Value": 50.0}, // Limited actions
+        { "Piece": "HeroRogue", "Property": "ActionPoint", "Value": 5.0}, // Limited actions
         { "Piece": "HeroRogue", "Property": "AttackDamage", "Value": 4.0}, // Reduced from 5.0
         { "Piece": "HeroRogue", "Property": "CriticalHitDamage", "Value": 11.0}, // Reduced from 13.0
         { "Piece": "HeroRogue", "Property": "MoveRange", "Value": 6.0}, // Limited movement
         { "Piece": "HeroSorcerer", "Property": "StartHealth", "Value": 12.0}, // Reduced from 14.0
-        { "Piece": "HeroSorcerer", "Property": "ActionPoint", "Value": 50.0}, // Limited actions
+        { "Piece": "HeroSorcerer", "Property": "ActionPoint", "Value": 5.0}, // Limited actions
         { "Piece": "HeroSorcerer", "Property": "AttackDamage", "Value": 4.0}, // Reduced from 5.0
         { "Piece": "HeroSorcerer", "Property": "CriticalHitDamage", "Value": 10.0}, // Reduced from 12.0
         { "Piece": "HeroSorcerer", "Property": "MoveRange", "Value": 6.0}, // Limited movement
         { "Piece": "HeroWarlock", "Property": "StartHealth", "Value": 12.0}, // Reduced from 14.0
-        { "Piece": "HeroWarlock", "Property": "ActionPoint", "Value": 50.0}, // Limited actions
+        { "Piece": "HeroWarlock", "Property": "ActionPoint", "Value": 5.0}, // Limited actions
         { "Piece": "HeroWarlock", "Property": "AttackDamage", "Value": 4.0}, // Reduced from 5.0
         { "Piece": "HeroWarlock", "Property": "CriticalHitDamage", "Value": 10.0}, // Reduced from 12.0
         { "Piece": "HeroWarlock", "Property": "MoveRange", "Value": 6.0}, // Limited movement
