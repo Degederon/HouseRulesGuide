@@ -1,8 +1,8 @@
 # HouseRulesGuide
 
-083025 Created by Degederon for Demeo gamers.
+090425 Created by Degederon for Demeo gamers.
 
-Version 4.0 PM Edition
+Version 4.1 PM Edition
 
 Send feedback to: Demeo@epomd.com
 
@@ -18,19 +18,27 @@ This guide has been available since 2023 and it is now time for an update in 202
 
 \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*PLEASE READ\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
 
-Current Word Version is too big for GitHub. Download it from here: https://epomd-my.sharepoint.com/:w:/p/jappell/EeOI8pwQHiRImvmS3pgcLkgB73ixJ9cBiq0x7EbqA5TCqA?e=JMfUhH
+Current Word Version is too big for GitHub. Download it from here: https://epomd-my.sharepoint.com/:w:/p/jappell/Eesw9f1IAHZJvi9WNekDLM8BoysFZaAFONL5NBtwvwaNcA?e=usMzEu
 
 Current PDF is on GitHub for download.
 
 
 
-Here are some new areas of interest.
+In this updated version:
 
 
 
+* The guide has now added newer graphics in various areas, you will notice!
+* Section 14 had all of the Demo campaign maps. That has been moved to a new section at the end of the guide with Video walkthroughs and hi-res downloadable jpg maps. Roots of Evil is completed and now working on next book - stay tuned.
+* Section 15 was finally cleaned up for user feedback and suggestions.
+* Section 18 The section now depicts three levels of gameplay and provides you information on those three levels. This section was revamped and updated.
+* Section 27.4 Heros of the Voice Machine has been reformatted and cleaned up.
+* Section 28 - A new music library has been created with a growing sound effect library. All .mp3 sound effects can be downloaded.
+* Section 30 - Like to thank MyWy for his ongoing contributions for map content feedback.  
 
 
-* Welcome to Version 4.0!
+
+**Previous Version**
 
 
 
@@ -59,22 +67,6 @@ Here are some new areas of interest.
 * The Ability Converter program is now on Dege's GitHub channel. A program walkthrough for converting checking your json abilities and converting them to the new ability names.
 
 
-
-**Previous Release**
-
-* My tribute to Bob the Bunny and The Gray Alien in Section 26.4. Teardown of the masterpiece Legend of the Voice Machine. Nice job on this!
-
-
-
-* Looking to video a Demeo session with a group who like to have fun. If that appeals to you, send me an invite at Demeo@epomd.com.
-
-
-
-* Working to get all of the Serpent Lord Maps added, partially. This map seemed pretty ugly for some levels. A dark purple was highlighted over portions of some map levels. Check out my two player version ruleset for a Guardian and Bard. It provides a balanced level gameplay. Introducing AI in the mix to check for a balanced gameplay. Check it out and send your comments to Demeo@epomd.com. More are coming!
-
-
-
-* New Rulesets created, tested and available for you to download and try out.
 
 
 
