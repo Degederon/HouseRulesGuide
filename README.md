@@ -18,7 +18,7 @@ This guide has been available since 2023 and it is now time for an update in 202
 
 \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*PLEASE READ\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
 
-Current Word Version is too big for GitHub. Download it from here: https://epomd-my.sharepoint.com/:w:/p/jappell/Eesw9f1IAHZJvi9WNekDLM8BoysFZaAFONL5NBtwvwaNcA?e=usMzEu
+Current Word Version is too big for GitHub. Download it from here (54Mb): https://epomd-my.sharepoint.com/:w:/p/jappell/Eesw9f1IAHZJvi9WNekDLM8BoysFZaAFONL5NBtwvwaNcA?e=usMzEu
 
 Current PDF is on GitHub for download.
 
@@ -34,7 +34,7 @@ In this updated version:
 * Section 18 The section now depicts three levels of gameplay and provides you information on those three levels. This section was revamped and updated.
 * Section 27.4 Heros of the Voice Machine has been reformatted and cleaned up.
 * Section 28 - A new music library has been created with a growing sound effect library. All .mp3 sound effects can be downloaded.
-* Section 30 - Like to thank MyWy for his ongoing contributions for map content feedback.  
+* Section 30 - Like to thank MyWy for his ongoing contributions for map content feedback.
 
 
 
