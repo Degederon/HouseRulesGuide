@@ -10,14 +10,19 @@ This guide has been available since 2023 and it is now time for an update in 202
 
 \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*PLEASE READ\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
 
-Current Word Version is too big for GitHub. Download it from here (54Mb): https://epomd-my.sharepoint.com/:w:/p/jappell/Eesw9f1IAHZJvi9WNekDLM8BoysFZaAFONL5NBtwvwaNcA?e=usMzEu
+Current Word Version is too big for GitHub. Download it from here (55412Mb): https://epomd-my.sharepoint.com/:w:/p/jappell/Ee\_5su2Q2GZKg7pnwSZij5oB8LsSMT4IRdi2dFWx9cHkpQ?e=PqAhpm
 
 Current PDF is on GitHub for download.
 
 In this updated version:
+
+
 Section 17 Added MyWy’s Map Size Grid
 
+
+
 Previous Release
+
 * The guide has now added newer graphics in various areas, you will notice!
 * Section 14 had all of the Demo campaign maps. That has been moved to a new section at the end of the guide with Video walkthroughs and hi-res downloadable jpg maps. Roots of Evil is completed and now working on next book - stay tuned.
 * Section 15 was finally cleaned up for user feedback and suggestions.
@@ -35,8 +40,9 @@ Previous Release
 * A new YouTube channel - https://www.youtube.com/@degesdemeogroup
 * The Ability Converter "How To" video has been posted to youtube.
 * The Ability Converter program is now on Dege's GitHub channel. A program walkthrough for converting checking your json abilities and converting them to the new ability names.
-Continue with next edition for adding rules and descriptions. Coming soon are expanded troubleshooting and brand new scenarios I will be releasing on GitHub!
+  Continue with next edition for adding rules and descriptions. Coming soon are expanded troubleshooting and brand new scenarios I will be releasing on GitHub!
 
 Happy Modding,
 
 Dege
+
