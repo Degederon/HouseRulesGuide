@@ -1,7 +1,7 @@
 # HouseRulesGuide
 
 091325 Created by Degederon for Demeo gamers.
-Version 4.2 PM Edition
+Version 4.2 AM Edition
 
 Send feedback to: Demeo@epomd.com
 Dege's Demeo Setup \& Users Guide featuring The "House Rules" Customization Mod.
