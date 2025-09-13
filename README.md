@@ -10,6 +10,7 @@ This guide has been available since 2023 and it is now time for an update in 202
 
 \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*PLEASE READ\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
 
+091325 0858AM - Fixed bad link to guide
 Current Word Version is too big for GitHub. Download it from here (55412Mb): [https://epomd-my.sharepoint.com/:w:/p/jappell/Ee\_5su2Q2GZKg7pnwSZij5oB8LsSMT4IRdi2dFWx9cHkpQ?e=PqAhpm](https://epomd-my.sharepoint.com/:w:/p/jappell/Ee_5su2Q2GZKg7pnwSZij5oB8LsSMT4IRdi2dFWx9cHkpQ)
 
 Current PDF is on GitHub for download.
