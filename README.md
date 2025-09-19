@@ -80,7 +80,7 @@
 
 # \* The Ability Converter program is now on Dege's GitHub channel. A program walkthrough for converting checking your json abilities and converting them to the new ability names.
 
-# &nbsp; Continue with next edition for adding rules and descriptions. Coming soon are expanded troubleshooting and brand new scenarios I will be releasing on GitHub!
+#   Continue with next edition for adding rules and descriptions. Coming soon are expanded troubleshooting and brand new scenarios I will be releasing on GitHub!
 
 # 
 
@@ -89,6 +89,4 @@
 # 
 
 # Dege
-
-
 
