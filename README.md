@@ -1,92 +1,70 @@
-# \# HouseRulesGuide
+\# HouseRulesGuide
 
-# 
+091925 Created by Degederon for Demeo gamers.
 
-# 091925 Created by Degederon for Demeo gamers.
+Version 4.3 PM Edition
 
-# Version 4.3 PM Edition
+Send feedback to: Demeo@epomd.com
 
-# 
+Dege's Demeo Setup \\\& Users Guide featuring The "House Rules" Customization Mod.
 
-# Send feedback to: Demeo@epomd.com
+This guide has been available since 2023 and it is now time for an update in 2025. Utilizing AI and have a lot of ideas to share, so stay tuned and keep a current copy of the guide for reference.
 
-# Dege's Demeo Setup \\\& Users Guide featuring The "House Rules" Customization Mod.
+\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*PLEASE READ\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*
 
-# 
+091325 0858AM - Fixed bad link to guide
 
-# This guide has been available since 2023 and it is now time for an update in 2025. Utilizing AI and have a lot of ideas to share, so stay tuned and keep a current copy of the guide for reference.
+Current Word Version is too big for GitHub. Download it from here 70.2 MB : https://epomd-my.sharepoint.com/:w:/p/jappell/EdSDQt6R9RJHjIl6S\_vztwoBfgFeZjuXfuMv\_4304uNZ\_w?e=mnb1kG
 
-# 
+Current PDF is on GitHub for download.
 
-# \\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*PLEASE READ\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*
+In this updated version:
 
-# 
+Section 8 – New section - An introduction to HouseRules modding.
 
-# 091325 0858AM - Fixed bad link to guide
+Section 9 – Missing rules have now been added.
 
-# 
+Section 10 – Ability Keys Complete List added back into guide - Ability Keys are all being verified. Check out the improved and added card name list!
 
-# Current Word Version is too big for GitHub. Download it from here 70.2 MB : https://epomd-my.sharepoint.com/:w:/p/jappell/EdSDQt6R9RJHjIl6S\_vztwoBfgFeZjuXfuMv\_4304uNZ\_w?e=mnb1kG
+Section 11 – Behavior’s section has been revamped and updated
 
-# 
+Section 12 – Board Pieces section has been revamped and updated
 
-# Current PDF is on GitHub for download.
+Section 13 – Effect State Types section has been revamped and updated.
 
-# 
+Section 14 – Piece Types section has been revamped and updated
 
-# In this updated version:
+Section 15.7 Cana artwork from Jonathan Wesslund at https://www.artstation.com/artwork/vD0geA
 
-# 
+Section 19 – Updated with map level data
 
-# Section 8 – New section - An introduction to HouseRules modding.
+Section 19.1 – MyWy’s Map Grid has been updated
 
-# Section 9 – Missing rules have now been added.
+Section 21 Yossra El Said artwork at: https://www.artstation.com/yo-su-ra
 
-# Section 10 – Ability Keys Complete List added back into guide - Ability Keys are all being verified. Check out the improved and added card name list!
+Section 20.1 \& 243.1 introducing artist Hanna Yumidun and her message. See her artwork and story.
 
-# Section 11 – Behavior’s section has been revamped and updated
+&nbsp;	1. Section 14 that provides all of the hero’s overview now has new character graphics and an overview of what they do!
 
-# Section 12 – Board Pieces section has been revamped and updated
+&nbsp;	2. A new publication cover! Do you like it?
 
-# Section 13 – Effect State Types section has been revamped and updated.
+&nbsp;	3. Section 8 of the rules section has been totally revamped. I never liked the sterile look of the descriptions. It now talks to you and provides more of a conversational feel. It gives you some real-world examples of how to use them. The entire section has been rewritten. More rules have been added.
 
-# Section 14 – Piece Types section has been revamped and updated
+&nbsp;	4. The entire guide has been restructured by font size and section selection. Everything pops out a little better now and has more of a professional feel.
 
-# Section 15.7 Cana artwork from Jonathan Wesslund at https://www.artstation.com/artwork/vD0geA
+\* A new YouTube channel - https://www.youtube.com/@degesdemeogroup
 
-# Section 19 – Updated with map level data
+\* The Ability Converter "How To" video has been posted to youtube.
 
-# Section 19.1 – MyWy’s Map Grid has been updated
+\* The Ability Converter program is now on Dege's GitHub channel. A program walkthrough for converting checking your json abilities and converting them to the new ability names.
 
-# Section 21 Yossra El Said artwork at: https://www.artstation.com/yo-su-ra
+&nbsp; Continue with next edition for adding rules and descriptions. Coming soon are expanded troubleshooting and brand new scenarios I will be releasing on GitHub!
 
-# Section 20.1 \& 243.1 introducing artist Hanna Yumidun and her message. See her artwork and story.
+Happy Modding,
 
-# 
+Dege
 
-#  	1. Section 14 that provides all of the hero’s overview now has new character graphics and an overview of what they do!
 
-#  	2. A new publication cover! Do you like it?
 
-#  	3. Section 8 of the rules section has been totally revamped. I never liked the sterile look of the descriptions. It now talks to you and provides more of a conversational feel. It gives you some real-world examples of how to use them. The entire section has been rewritten. More rules have been added.
 
-#  	4. The entire guide has been restructured by font size and section selection. Everything pops out a little better now and has more of a professional feel.
-
-# 
-
-# \* A new YouTube channel - https://www.youtube.com/@degesdemeogroup
-
-# \* The Ability Converter "How To" video has been posted to youtube.
-
-# \* The Ability Converter program is now on Dege's GitHub channel. A program walkthrough for converting checking your json abilities and converting them to the new ability names.
-
-#   Continue with next edition for adding rules and descriptions. Coming soon are expanded troubleshooting and brand new scenarios I will be releasing on GitHub!
-
-# 
-
-# Happy Modding,
-
-# 
-
-# Dege
 
