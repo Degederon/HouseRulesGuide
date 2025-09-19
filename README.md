@@ -1,3 +1,5 @@
+^^^^^^^^^^^^GUIDE IS NOW LISTED ON GITHUB^^^^^^^^^^
+
 \# HouseRulesGuide
 
 091925 Created by Degederon for Demeo gamers.
@@ -9,8 +11,6 @@ Send feedback to: Demeo@epomd.com
 Dege's Demeo Setup \\\& Users Guide featuring The "House Rules" Customization Mod.
 
 This guide has been available since 2023 and it is now time for an update in 2025. Utilizing AI and have a lot of ideas to share, so stay tuned and keep a current copy of the guide for reference.
-
-\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*PLEASE READ\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*
 
 Current PDF is on GitHub for download.
 
