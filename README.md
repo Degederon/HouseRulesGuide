@@ -14,7 +14,7 @@ This guide has been available since 2023 and it is now time for an update in 202
 
 
 
-Current Word Version is too big for GitHub. Download it from here 70.2 MB : https://epomd-my.sharepoint.com/:w:/p/jappell/EdSDQt6R9RJHjIl6S\_vztwoBfH7yHcx0t2F-TdL\_rJ75ew?e=jpAii1
+Current Word Version is too big for GitHub. Download it from here 70.2 MB : https://epomd-my.sharepoint.com/:w:/p/jappell/EdSDQt6R9RJHjIl6S\_vztwoBV0iR1zqYkVK8om69mkuANA?e=2edZY5
 
 Current PDF is on GitHub for download.
 
