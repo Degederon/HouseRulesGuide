@@ -1,7 +1,7 @@
 # HouseRulesGuide
 
-091325 Created by Degederon for Demeo gamers.
-Version 4.2 AM Edition
+091925 Created by Degederon for Demeo gamers.
+Version 4.3 PM Edition
 
 Send feedback to: Demeo@epomd.com
 Dege's Demeo Setup \& Users Guide featuring The "House Rules" Customization Mod.
@@ -12,27 +12,24 @@ This guide has been available since 2023 and it is now time for an update in 202
 
 091325 0858AM - Fixed bad link to guide
 
-Current Word Version is too big for GitHub. Download it from here (55412Mb): [https://epomd-my.sharepoint.com/:w:/p/jappell/Ee\_5su2Q2GZKg7pnwSZij5oB8LsSMT4IRdi2dFWx9cHkpQ?e=PqAhpm](https://epomd-my.sharepoint.com/:w:/p/jappell/Ee_5su2Q2GZKg7pnwSZij5oB8LsSMT4IRdi2dFWx9cHkpQ)
+Current Word Version is too big for GitHub. Download it from here 70.2 MB : https://epomd-my.sharepoint.com/:w:/p/jappell/EdSDQt6R9RJHjIl6S_vztwoBfgFeZjuXfuMv_4304uNZ_w?e=mnb1kG
 
 Current PDF is on GitHub for download.
 
 In this updated version:
 
-
-Section 17 Added MyWy’s Map Size Grid
-
-
-
-Previous Release
-
-* The guide has now added newer graphics in various areas, you will notice!
-* Section 14 had all of the Demo campaign maps. That has been moved to a new section at the end of the guide with Video walkthroughs and hi-res downloadable jpg maps. Roots of Evil is completed and now working on next book - stay tuned.
-* Section 15 was finally cleaned up for user feedback and suggestions.
-* Section 18 The section now depicts three levels of gameplay and provides you information on those three levels. This section was revamped and updated.
-* Section 27.4 Heros of the Voice Machine has been reformatted and cleaned up.
-* Section 28 - A new music library has been created with a growing sound effect library. All .mp3 sound effects can be downloaded.
-* Section 30 - Like to thank MyWy for his ongoing contributions for map content feedback.
-* In this release there is so much that has been updated and\\or changed.
+Section 8 – New section - An introduction to HouseRules modding.
+Section 9 – Missing rules have now been added.
+Section 10 – Ability Keys Complete List added back into guide - Ability Keys are all being verified. Check out the improved and added card name list!
+Section 11 – Behavior’s section has been revamped and updated
+Section 12 – Board Pieces section has been revamped and updated
+Section 13 – Effect State Types section has been revamped and updated.
+Section 14 – Piece Types section has been revamped and updated
+Section 15.7 Cana artwork from Jonathan Wesslund at https://www.artstation.com/artwork/vD0geA
+Section 19 – Updated with map level data
+Section 19.1 – MyWy’s Map Grid has been updated
+Section 21 Yossra El Said artwork at: https://www.artstation.com/yo-su-ra
+Section 20.1 & 243.1 introducing artist Hanna Yumidun and her message. See her artwork and story.
 
  	1. Section 14 that provides all of the hero’s overview now has new character graphics and an overview of what they do!
  	2. A new publication cover! Do you like it?
