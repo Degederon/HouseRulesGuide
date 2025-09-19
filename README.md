@@ -12,9 +12,9 @@ This guide has been available since 2023 and it is now time for an update in 202
 
 \\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*PLEASE READ\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*
 
-091325 0858AM - Fixed bad link to guide
 
-Current Word Version is too big for GitHub. Download it from here 70.2 MB : https://epomd-my.sharepoint.com/:w:/p/jappell/EdSDQt6R9RJHjIl6S_vztwoBfH7yHcx0t2F-TdL_rJ75ew?e=jpAii1
+
+Current Word Version is too big for GitHub. Download it from here 70.2 MB : https://epomd-my.sharepoint.com/:w:/p/jappell/EdSDQt6R9RJHjIl6S\_vztwoBfH7yHcx0t2F-TdL\_rJ75ew?e=jpAii1
 
 Current PDF is on GitHub for download.
 
@@ -34,9 +34,9 @@ Section 13 – Effect State Types section has been revamped and updated.
 
 Section 14 – Piece Types section has been revamped and updated
 
-Section 15.7 Cana artwork from Jonathan Wesslund at https://www.artstation.com/artwork/vD0geA
+Section 15.7 - Cana artwork from Jonathan Wesslund at https://www.artstation.com/artwork/vD0geA
 
-Section 19 – Updated with map level data
+Section 19 - Updated with map level data
 
 Section 19.1 – MyWy’s Map Grid has been updated
 
