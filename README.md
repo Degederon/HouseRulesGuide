@@ -14,7 +14,7 @@ This guide has been available since 2023 and it is now time for an update in 202
 
 091325 0858AM - Fixed bad link to guide
 
-Current Word Version is too big for GitHub. Download it from here 70.2 MB : https://epomd-my.sharepoint.com/:w:/p/jappell/EdSDQt6R9RJHjIl6S\_vztwoBfgFeZjuXfuMv\_4304uNZ\_w?e=mnb1kG
+Current Word Version is too big for GitHub. Download it from here 70.2 MB : https://epomd-my.sharepoint.com/:w:/p/jappell/EdSDQt6R9RJHjIl6S\_vztwoBCcquE74bW7rJjHfL06KauQ?e=ZTZMca
 
 Current PDF is on GitHub for download.
 
@@ -44,13 +44,13 @@ Section 21 Yossra El Said artwork at: https://www.artstation.com/yo-su-ra
 
 Section 20.1 \& 243.1 introducing artist Hanna Yumidun and her message. See her artwork and story.
 
-&nbsp;	1. Section 14 that provides all of the hero’s overview now has new character graphics and an overview of what they do!
+ 	1. Section 14 that provides all of the hero’s overview now has new character graphics and an overview of what they do!
 
-&nbsp;	2. A new publication cover! Do you like it?
+ 	2. A new publication cover! Do you like it?
 
-&nbsp;	3. Section 8 of the rules section has been totally revamped. I never liked the sterile look of the descriptions. It now talks to you and provides more of a conversational feel. It gives you some real-world examples of how to use them. The entire section has been rewritten. More rules have been added.
+ 	3. Section 8 of the rules section has been totally revamped. I never liked the sterile look of the descriptions. It now talks to you and provides more of a conversational feel. It gives you some real-world examples of how to use them. The entire section has been rewritten. More rules have been added.
 
-&nbsp;	4. The entire guide has been restructured by font size and section selection. Everything pops out a little better now and has more of a professional feel.
+ 	4. The entire guide has been restructured by font size and section selection. Everything pops out a little better now and has more of a professional feel.
 
 \* A new YouTube channel - https://www.youtube.com/@degesdemeogroup
 
@@ -58,13 +58,9 @@ Section 20.1 \& 243.1 introducing artist Hanna Yumidun and her message. See her 
 
 \* The Ability Converter program is now on Dege's GitHub channel. A program walkthrough for converting checking your json abilities and converting them to the new ability names.
 
-&nbsp; Continue with next edition for adding rules and descriptions. Coming soon are expanded troubleshooting and brand new scenarios I will be releasing on GitHub!
+  Continue with next edition for adding rules and descriptions. Coming soon are expanded troubleshooting and brand new scenarios I will be releasing on GitHub!
 
 Happy Modding,
 
 Dege
-
-
-
-
 
