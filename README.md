@@ -2,61 +2,59 @@
 
 \# HouseRulesGuide
 
-091925 Created by Degederon for Demeo gamers.
+092525 Created by Degederon for Demeo gamers.
 
-Version 4.3 PM Edition
+Version 4.4 PM Edition
 
 Send feedback to: Demeo@epomd.com
 
 Dege's Demeo Setup \\\& Users Guide featuring The "House Rules" Customization Mod.
 
-This guide has been available since 2023 and it is now time for an update in 2025. Utilizing AI and have a lot of ideas to share, so stay tuned and keep a current copy of the guide for reference.
 
-Current PDF is on GitHub for download.
 
-In this updated version:
+What's New in This Edition
 
-Section 8 – New section - An introduction to HouseRules modding.
+We've poured extensive effort into making this guide more reliable, accessible, and inspiring. Here's a summary of the key improvements:
 
-Section 9 – Missing rules have now been added.
 
-Section 10 – Ability Keys Complete List added back into guide - Ability Keys are all being verified. Check out the improved and added card name list!
 
-Section 11 – Behavior’s section has been revamped and updated
+Comprehensive Rule Audit: Every rule in the guide has undergone a thorough review—examined, tested, and verified for functionality. These are now production-ready for integration into your JSON scripts.
 
-Section 12 – Board Pieces section has been revamped and updated
+Enhanced Examples with Detailed Comments: Nearly all examples have been overhauled to include line-by-line annotations, explaining the purpose and mechanics of each JSON element for easier learning and implementation.
 
-Section 13 – Effect State Types section has been revamped and updated.
+Full Testing Coverage: Each rule has been loaded into active scripts and rigorously tested to confirm accuracy and performance.
 
-Section 14 – Piece Types section has been revamped and updated
+Visual Change Indicators: Corrections to scripts—such as syntax fixes or ability name updates—are highlighted in blue for quick identification and reference.
 
-Section 15.7 - Cana artwork from Jonathan Wesslund at https://www.artstation.com/artwork/vD0geA
+Revolution Rules Integration: All Revolution Rules are now included, backed by over 40 hours of dedicated testing conducted in the final week before release.
 
-Section 19 - Updated with map level data
+AI-Powered Validation: Four advanced AI engines were employed to cross-verify the accuracy, playability, and balance of rewritten rules, ensuring a high standard of quality.
 
-Section 19.1 – MyWy’s Map Grid has been updated
+Expanded Section 10 – Abilities: This section now features dual lookup lists—one sorted by ability name and another by card name—for faster navigation and reference.
 
-Section 21 Yossra El Said artwork at: https://www.artstation.com/yo-su-ra
+Deep Dive in Section 15 – Cards: We've loaded and evaluated every conceivable card, assessing its functionality, visual rendering (e.g., "paints" correctly), aesthetics, potential issues (broken or suboptimal), and overall viability. Discover hidden gems or troubleshoot edge cases you might not have encountered before.
 
-Section 20.1 \& 243.1 introducing artist Hanna Yumidun and her message. See her artwork and story.
+Updated Color Icons: Two new color icons have been incorporated and applied across relevant rules, optimizing for skirmish and multiplayer scenarios.
 
- 	1. Section 14 that provides all of the hero’s overview now has new character graphics and an overview of what they do!
+New Resources and Tools
 
- 	2. A new publication cover! Do you like it?
+To support your modding journey, we're excited to introduce these fresh assets:
 
- 	3. Section 8 of the rules section has been totally revamped. I never liked the sterile look of the descriptions. It now talks to you and provides more of a conversational feel. It gives you some real-world examples of how to use them. The entire section has been rewritten. More rules have been added.
 
- 	4. The entire guide has been restructured by font size and section selection. Everything pops out a little better now and has more of a professional feel.
 
-\* A new YouTube channel - https://www.youtube.com/@degesdemeogroup
+YouTube Channel: Dive into video tutorials and walkthroughs at Dege's Demo Group.
 
-\* The Ability Converter "How To" video has been posted to youtube.
+Ability Converter "How To" Video: A step-by-step guide to using the tool is now live on YouTube—perfect for transitioning your JSON abilities to the latest naming conventions.
 
-\* The Ability Converter program is now on Dege's GitHub channel. A program walkthrough for converting checking your json abilities and converting them to the new ability names.
+Ability Converter Program: Download the latest version from Dege's GitHub repository. It includes a detailed walkthrough for validating and converting your abilities effortlessly.
 
-  Continue with next edition for adding rules and descriptions. Coming soon are expanded troubleshooting and brand new scenarios I will be releasing on GitHub!
+Looking Ahead
 
-Happy Modding,
+The next edition is in development and will focus on expanding rule sets with detailed descriptions. Stay tuned for enhanced troubleshooting sections and brand-new scenarios, all available on GitHub. We're committed to evolving this guide alongside the community—your feedback helps shape what's next!
+
+
+
+Happy Modding!
 
 Dege
 
