@@ -1,4 +1,10 @@
-092625 Degederon Version 4.6
+092925 Degederon Version 4.6 (Update - Last Edition 2025)
+
+
+
+Hello Modders, This will be the last edition for this year. The journey has been fun and I sure hope you enjoy the guide.  
+
+
 
 • Housekeeping - Corrected 3 instances of " StrengthenCourage " to “StrengthenCourage”.
 
@@ -62,5 +68,13 @@ To support your modding journey, we're excited to introduce these fresh assets -
 
 • Ability Converter Program - Download the latest version from Dege's GitHub repository. It includes a detailed walkthrough for validating and converting your abilities effortlessly.
 
-Happy Modding! Dege
+
+
+
+
+Happy Modding! 
+
+
+
+Dege
 
